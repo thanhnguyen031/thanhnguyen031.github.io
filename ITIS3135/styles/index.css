@@ -1,0 +1,50 @@
+html, body, main, header, footer, nav {
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    background: linear-gradient(to right, #B3E5FC, #81D4FA); /* Gradient blue background */
+    text-align: center;
+    color: #333;
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Header styling */
+header {
+    background: #0288D1;
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Main content styling */
+main {
+    width: 70%;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    box-sizing: border-box; /* Fix padding issue */
+}
+
+/* Footer */
+footer {
+    background: #0288D1;
+    color: white;
+    padding: 15px;
+    font-size: 14px;
+    width: 100%;
+    margin-top: 20px;
+    box-sizing: border-box; /* Fix padding issue */
+}
+
