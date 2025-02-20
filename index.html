@@ -3,23 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <title>Thanh Nguyen |Tenacious Nightingale | ITIS 3135</title>
+    <link rel="stylesheet" href="styles/style.css">
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <h1>Course Page</h1>
-        <h2>Thanh Nguyen || Binny</h2>
+        <div data-include="components/header.html"></div>
     </header>
     <main>
-        <div>
-            <ul>
-                <li><a href="/tnguy278">Home</a></li>
-                <li><a href="introduction.html">Introduction</a></li>
-                <li><a href="contract.html">Contract</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </div>
+        <h2>Home</h2>
+        <p>Hello, you've made it to my 3135 Course page</p>
     </main>
     <footer>
+        <div data-include="components/footer.html"></div>
+        <a href="">Click here </a>
+    </footer>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+             document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+     </script>
+     <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
