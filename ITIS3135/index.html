@@ -3,20 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thanh Nguyen | ITIS 3135 | Home</title>
+    <title>Thanh Gia Nguyen | Tenacious Nightingale | ITIS 3135</title>
     <link href="styles/index.css" rel="stylesheet" type="text/css" media="screen">
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <h1>I am Thanh Nguyen and this is my ITIS3135 First Course Page</h1>
-        <h2><a href="/tnguy278">Click to go to ITIS 3135 Home Page</a></h2>
+        <div data-include="components/header.html"></div>
     </header>
     <main>
-
+        <h2>Home</h2>
+        <p>Hello, you've made it to my 3135 Course page</p>
     </main>
     <footer>
-
+        <div data-include="components/footer.html"></div>
+        <a href="">Click here </a>
     </footer>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+             document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+     </script>
+     <script src="scripts/HTMLInclude.min.js"></script>
 </body>
 </html>
