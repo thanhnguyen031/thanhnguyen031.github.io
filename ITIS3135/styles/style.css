@@ -1,8 +1,9 @@
+/* General styles */
 body {
-    background-color: #B3E5FC; /* Baby blue background */
+    background-color: #EDE8F5; /* Soft pastel lavender */
     text-align: center;
-    color: #333; /* Dark gray text for better readability */
-    font-family: "Arial", sans-serif; /* More modern and readable font */
+    color: #3D52A0; /* Deep navy blue for text */
+    font-family: "Arial", sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -13,31 +14,32 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    border: 2px solid #0288D1; /* Deep blue border */
+    border: 2px solid #7091E6; /* Medium blue border */
     background-color: #FFFFFF; /* White background */
     padding: 20px;
     z-index: 1000;
-    border-radius: 10px; /* Rounded edges */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Links */
 a {
-    color: #01579B; /* Darker blue for contrast */
+    color: #3D52A0; /* Deep blue */
     text-decoration: none;
     font-weight: bold;
 }
 
 a:hover {
-    color: #D32F2F; /* Slightly brighter crimson */
+    color: #8697C4; /* Muted blue for hover effect */
 }
 
 /* Main content styling */
 main {
     text-align: left;
-    margin: auto;
-    width: 60%;
-    background-color: #E1F5FE; /* Light pastel blue */
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 90%;
+    background-color: #ADBBDA; /* Light blue-gray */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -46,7 +48,7 @@ main {
 /* Headings */
 h2 {
     text-align: center;
-    color: #0277BD; /* Medium blue for contrast */
+    color: #3D52A0; /* Deep blue */
     font-size: 1.8em;
     margin-top: 20px;
 }
@@ -54,7 +56,7 @@ h2 {
 /* Images */
 img {
     width: 60%;
-    border-radius: 8px; /* Rounded corners */
+    border-radius: 8px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
 }
 
@@ -62,6 +64,34 @@ img {
 figure {
     text-align: center;
     font-style: italic;
-    color: #666; /* Subtle gray */
+    color: #7091E6; /* Medium blue */
+}
+
+/* MEDIA QUERIES */
+
+/* Rule Overrides for Tablet Devices */
+@media screen and (min-width: 601px) and (max-width: 980px) {
+    main {
+        width: 95%;
+        background-color: #8697C4; /* Slightly darker shade */
+    }
+    img {
+        width: 80%;
+    }
+}
+
+/* Rule Overrides for Mobile Devices */
+@media screen and (max-width: 600px) {
+    main {
+        width: 98%;
+        padding: 15px;
+        background-color: #7091E6; /* Brighter shade for contrast */
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    img {
+        width: 100%;
+    }
 }
 
