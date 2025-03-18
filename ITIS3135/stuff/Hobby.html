@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobby</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background-color: #222;
+            color: white;
+            padding: 15px 0;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #444;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        section {
+            display: none;
+        }
+        section.active {
+            display: block;
+        }
+        figure {
+            margin: 20px 0;
+        }
+        figcaption {
+            font-style: italic;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background: #222;
+            color: white;
+        }
+        .validation-links img {
+            width: 100px;
+        }
+    </style>
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+        window.onload = function () {
+            showSection('home');
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <h1>My Hobby</h1>
+        <nav>
+            <a href="#" onclick="showSection('home')">🏠 Home</a> |
+            <a href="#" onclick="showSection('about')">👤 About</a> |
+            <a href="#" onclick="showSection('best_times')">⏰ Best Times</a> |
+            <a href="#" onclick="showSection('locations')">📍 Locations</a> |
+            <a href="#" onclick="showSection('how')">🔧 How</a> |
+            <a href="#" onclick="showSection('why')">❓ Why</a>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="active">
+            <h2>What is My Hobby?</h2>
+            <p>This is an introduction to my hobby.</p>
+            <figure>
+                <img src="images/hobby.jpg" alt="Hobby Image">
+                <figcaption>My best hobby is traveling around the world </figcaption>
+            </figure>
+        </section>
+        <section id="about">
+            <h2>Who am I?</h2>
+            <p>My name is Thanh Nguyen (binny), I'm a senior in Computer Engineering Major at UNCC. My best hobby is traveling around the world with my family during a free time.</p>
+        </section>
+        <section id="best_times">
+            <h2>When is the Best Time?</h2>
+            <p>The best time to enjoy the hobby is summer because I have 3 months break from school so I could go around the world to see something that I never see before. Maybe sometime during holidays, like Christmas and New Year are the best time to travel to.</p>
+        </section>
+        <section id="locations">
+            <h2>Where to Enjoy?</h2>
+            <p>I usually go to Asia countries, mainly visit Viet Nam, because Viet Nam is my hometown, and after that me and family go to Thailand, Singapore, Malaysia, and other different countries in Asia.</p>
+        </section>
+        <section id="how">
+            <h2>How to Get Started?</h2>
+            <p>Save as much money you could, so you can go treat yourself a trip to somewhere that you always wanted. Sometime, you only live once, you need to do whatever you love to do.</p>
+        </section>
+        <section id="why">
+            <h2>Why Do This Hobby?</h2>
+            <p>Because traveling is help people get away from stress that they got from school and works, and this hobby can help people realise that the world is so beautiful, and learn cultures from different countries.</p>
+        </section>
+    </main>
+    <footer>
+        <p>Designed by <a href="https://webpages.charlotte.edu/tnguy278/itis3135/">Binny Nguyen Firm</a></p>
+        <div class="validation-links">
+            <a href="https://validator.w3.org/check?uri=referer">
+                <img src="https://raw.githubusercontent.com/bradleytaunt/html5-valid-badge/refs/heads/master/html5-validator-badge.png" 
+                     alt="Valid HTML 5" style="border:0;width:88px;height:31px;">
+            </a>
+        
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px" 
+                     src="https://jigsaw.w3.org/css-validator/images/vcss" 
+                     alt="Valid CSS!">
+            </a>
+        
+            <a href="https://wave.webaim.org/report">
+                <img style="border:0;width:88px;height:31px" 
+                     src="https://www.w3.org/WAI/WCAG22/wcag2.2AAA.png" 
+                     alt="Accessibility Validation">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
