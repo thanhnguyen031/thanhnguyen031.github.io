@@ -42,7 +42,15 @@
             display: block;
         }
         figure {
-            margin: 20px 0;
+            max-width: 500px; /* Ensures images don't get too large */
+            margin: 20px auto;
+        }
+        img {
+            max-width: 100%; /* Scales the image to fit within its container */
+            height: auto; /* Maintains aspect ratio */
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px; /* Optional: Adds rounded corners for a modern look */
         }
         figcaption {
             font-style: italic;
@@ -84,33 +92,69 @@
     <main>
         <section id="home" class="active">
             <h2>What is My Hobby?</h2>
-            <p>This is an introduction to my hobby.</p>
+            <p>My hobby is traveling with my family in the summer break.</p>
             <figure>
-                <img src="images/hobby.jpg" alt="Hobby Image">
-                <figcaption>My best hobby is traveling around the world </figcaption>
+                <img src="https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-6/361908284_2217103815144168_4695301310218161728_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=-xGGfe1Oc7kQ7kNvgHOKUZX&_nc_oc=Adi_jBLf4Qjn8ffEub6KqxzBlTOx6C3_RPGp-ovfuyDXkCA3hGtJqLOmXZ6g3VkqlAqyZ_9bzQVjV-sduaumHecz&_nc_zt=23&_nc_ht=scontent-atl3-1.xx&_nc_gid=7VXxHokle70XJWoyKN-5vA&oh=00_AYEKxS2hPqC5i9-LZDah93MbSWrl0heMouxACNXfx_-SBg&oe=67DE9F33" alt="Hobby Image">
+                <figcaption>My best hobby is traveling around the world.</figcaption>
             </figure>
         </section>
+
         <section id="about">
             <h2>Who am I?</h2>
-            <p>My name is Thanh Nguyen (binny), I'm a senior in Computer Engineering Major at UNCC. My best hobby is traveling around the world with my family during a free time.</p>
+            <p>My name is Thanh Nguyen (Binny), and I'm a senior in Computer Engineering major at UNCC. 
+               My best hobby is traveling around the world with my family during my free time.</p>
+            
+            <figure>
+                <img src="https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-6/472908320_18478302685021679_7176049676535695976_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=VjlKmH5xMJIQ7kNvgF11jEq&_nc_oc=AdgK4UJjzdhY6vVm2B7w3IjuG36BN1TR_54kCr3o6rgXw3YoZgvU36fs2ZctbmV7Ir_N5lpYagRlrGn8dpNJCpHo&_nc_zt=23&_nc_ht=scontent-atl3-1.xx&_nc_gid=xc2xjI7hdn1bD_6DgWVVwA&oh=00_AYEcd0_cUIAiRQ3b1-rbMa2hB-XQ9ISU-7vIAKTQA8C4Wg&oe=67DE9649" alt="Binny in New York">
+                <figcaption>Binny exploring Quy Nhon, Vietnam.</figcaption>
+            </figure>
         </section>
+        
         <section id="best_times">
             <h2>When is the Best Time?</h2>
-            <p>The best time to enjoy the hobby is summer because I have 3 months break from school so I could go around the world to see something that I never see before. Maybe sometime during holidays, like Christmas and New Year are the best time to travel to.</p>
+            <p>The best time to enjoy traveling is during the summer because I have a three-month break from school. 
+               This allows me to explore different places around the world and experience things I have never seen before. 
+               Holidays like Christmas and New Year are also great times to travel, as many destinations offer festive celebrations.</p>
+        
+            <figure>
+                <img src="https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-6/372036093_2246530982201451_6884260654997113533_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=7f9ONxZ7zh4Q7kNvgFNwcEk&_nc_oc=AdhsePkm8V8srBIOBk7bwKD6ksh8GZ5Xa97mrEWYbjp5aIeSP9W7nqkmFODaeEvNXjlIvUYKsn7xctdRYaym8NnV&_nc_zt=23&_nc_ht=scontent-atl3-1.xx&_nc_gid=fTNXakUelKIgzlyef9Nmyw&oh=00_AYHd9VMXgBrHCtaj0Lwn1ox_RU0AfBFT4D7zXwdgpZvD1A&oe=67DEA26A" alt="Traveling in Summer">
+                <figcaption>Exploring new destinations during the summer break.</figcaption>
+            </figure>
         </section>
+        
         <section id="locations">
             <h2>Where to Enjoy?</h2>
-            <p>I usually go to Asia countries, mainly visit Viet Nam, because Viet Nam is my hometown, and after that me and family go to Thailand, Singapore, Malaysia, and other different countries in Asia.</p>
+            <p>I usually travel to Asian countries, mainly visiting Vietnam since it is my hometown. 
+               After that, my family and I explore other countries like Thailand, Singapore, Malaysia, and various other destinations in Asia.</p>
+        
+            <figure>
+                <img src="https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-6/357358707_2205079483013268_1959205543434882103_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=WNlBQZDmiKsQ7kNvgFQNzMZ&_nc_oc=Adj7TMuxU8WjxBsiEywmF50ICLLJv-knsJ3z97YE0zaOllLZSIkwGntnlkptHltPuq1_C-RyxQnyLqyYSi3ZgOKr&_nc_zt=23&_nc_ht=scontent-atl3-1.xx&_nc_gid=rsEvmqruOi_aAMJiYDch7w&oh=00_AYFJOiJBc0qC4e99HGz-1X2ufA1RbIq-xJeoUfI7XQAY4g&oe=67DE94D8" alt="Traveling in Asia">
+                <figcaption>Discovering the beauty of Asia: Vietnam, Thailand, Singapore, and beyond.</figcaption>
+            </figure>
         </section>
+        
         <section id="how">
             <h2>How to Get Started?</h2>
-            <p>Save as much money you could, so you can go treat yourself a trip to somewhere that you always wanted. Sometime, you only live once, you need to do whatever you love to do.</p>
+            <p>Save as much money as you can so you can treat yourself to a trip to a place you've always wanted to visit. 
+               Sometimes, you only live once, and it's important to do what you love.</p>
+        
+            <figure>
+                <img src="https://www.usnews.com/cmsmedia/cf/26/172bb6644385a25506e39411a012/160229-savingsjars-stock.jpg" alt="Saving for Travel">
+                <figcaption>Planning and saving money for your dream trip.</figcaption>
+            </figure>
         </section>
+        
         <section id="why">
             <h2>Why Do This Hobby?</h2>
-            <p>Because traveling is help people get away from stress that they got from school and works, and this hobby can help people realise that the world is so beautiful, and learn cultures from different countries.</p>
+            <p>Traveling helps people escape the stress of school and work. It also allows individuals to experience the beauty of the world and learn about different cultures from various countries.</p>
+        
+            <figure>
+                <img src="https://givinggetaway.com/wp-content/uploads/2023/04/Travel-to-Release-Stress-The-Surprising-Benefits-of-Exploring-New-Places-Banner-576x1024.jpg" alt="Benefits of Traveling">
+                <figcaption>Traveling brings joy, adventure, and cultural experiences.</figcaption>
+            </figure>
         </section>
     </main>
+    
     <footer>
         <p>Designed by <a href="https://webpages.charlotte.edu/tnguy278/itis3135/">Binny Nguyen Firm</a></p>
         <div class="validation-links">
@@ -118,13 +162,11 @@
                 <img src="https://raw.githubusercontent.com/bradleytaunt/html5-valid-badge/refs/heads/master/html5-validator-badge.png" 
                      alt="Valid HTML 5" style="border:0;width:88px;height:31px;">
             </a>
-        
             <a href="https://jigsaw.w3.org/css-validator/check/referer">
                 <img style="border:0;width:88px;height:31px" 
                      src="https://jigsaw.w3.org/css-validator/images/vcss" 
                      alt="Valid CSS!">
             </a>
-        
             <a href="https://wave.webaim.org/report">
                 <img style="border:0;width:88px;height:31px" 
                      src="https://www.w3.org/WAI/WCAG22/wcag2.2AAA.png" 
