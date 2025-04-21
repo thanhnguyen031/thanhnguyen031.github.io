@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Slideshow Gallery - ITIS 3135 Thanh Nguyen</title>
+  <link rel="stylesheet" href="styles/default.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div id="header"></div>
+
+  <main>
+    <h2>Slideshow Gallery</h2>
+    <p class="tagline">Each image represents a letter in my full name: Thanh Nguyen</p>
+
+    <div class="slideshow-container">
+      <img id="mainImage" src="images/binnynewyork.jpg" alt="T for Tree" />
+      <p id="caption">T - Tree</p>
+    </div>
+
+    <div class="thumbnail-list">
+      <img src="images/tree.jpg" alt="T" data-caption="T - Tree">
+      <img src="images/house.jpg" alt="H" data-caption="H - House">
+      <img src="images/apple.png" alt="A" data-caption="A - Apple">
+      <img src="images/note.jpg" alt="N" data-caption="N - Notebook">
+      <img src="images/hat.jpg" alt="H" data-caption="H - Hat">
+      <img src="images/noodles.jpg" alt="N" data-caption="N - Noodles">
+      <img src="images/guitar.jpg" alt="G" data-caption="G - Guitar">
+      <img src="images/umbrella.jpg" alt="U" data-caption="U - Umbrella">
+      <img src="images/yarn.jpg" alt="Y" data-caption="Y - Yarn">
+      <img src="images/enve.jpg" alt="E" data-caption="E - Envelope">
+      <img src="images/newspaper.jpg" alt="N" data-caption="N - Newspaper">
+    </div>
+
+    <h3>Image Credits</h3>
+    <p>All images used in this slideshow were original photos on Google or provided through collaboration with classmates. No AI-generated images were used.</p>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="scripts/slideshow.js"></script>
+  <script>
+    // Load dynamic header and footer
+    $("#header").load("components/header.html");
+    $("#footer").load("components/footer.html");
+  </script>
+</body>
+</html>
+

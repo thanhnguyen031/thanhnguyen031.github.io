@@ -1,0 +1,154 @@
+/* General Styles */
+body {
+    background-color: #EDE8F5; /* Soft pastel lavender */
+    text-align: center;
+    color: #3D52A0; /* Deep navy blue for text */
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Centered dialog box with soft shadow */
+  .dialog {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #7091E6;
+    background-color: #FFFFFF;
+    padding: 20px;
+    z-index: 1000;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Links */
+  a {
+    color: #3D52A0;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    color: #8697C4;
+  }
+  
+  /* Main layout */
+  main {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 90%;
+    background-color: #ADBBDA;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Headings */
+  h2 {
+    text-align: center;
+    color: #3D52A0;
+    font-size: 1.8em;
+    margin-top: 20px;
+  }
+  
+  /* Images (default) */
+  img {
+    width: 60%;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Slideshow Styles */
+  .slideshow-container {
+    max-width: 600px;
+    margin: auto;
+    position: relative;
+  }
+  
+  #mainImage {
+    width: 100%;
+    border: 4px solid #333;
+    border-radius: 10px;
+  }
+  
+  #caption {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  .thumbnail-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  
+  .thumbnail-list img {
+    width: 80px;
+    height: 60px;
+    cursor: pointer;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: transform 0.2s;
+  }
+  
+  .thumbnail-list img:hover {
+    transform: scale(1.1);
+    border-color: #555;
+  }
+  
+  /* Bullet point list for AI prompts */
+  ul {
+    text-align: left;
+    margin: 20px auto;
+    padding-left: 40px;
+    max-width: 800px;
+    color: #3D52A0;
+    font-size: 1.1em;
+    line-height: 1.6;
+    list-style-type: disc;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+  /* Figure captions */
+  figure {
+    text-align: center;
+    font-style: italic;
+    color: #7091E6;
+  }
+  
+  /* Responsive Media Queries */
+  @media screen and (min-width: 601px) and (max-width: 980px) {
+    main {
+      width: 95%;
+      background-color: #8697C4;
+    }
+  
+    img {
+      width: 80%;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    main {
+      width: 98%;
+      padding: 15px;
+      background-color: #7091E6;
+    }
+  
+    h2 {
+      font-size: 1.5em;
+    }
+  
+    img {
+      width: 100%;
+    }
+  }
+  
